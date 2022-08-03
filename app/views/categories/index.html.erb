@@ -1,14 +1,28 @@
-<p style="color: green"><%= notice %></p>
+# <p style="color: green"><%= notice %></p>
 
-<h1>Categories</h1>
+# <h1>Categories</h1>
 
-<div id="categories">
-  <% @categories.each do |category| %>
-    <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
-  <% end %>
+# <div id="categories">
+#   <% @categories.each do |category| %>
+#     <%= render category %>
+#     <p>
+#       <%= link_to "Show this category", category %>
+#     </p>
+#   <% end %>
+# </div>
+
+# <%= link_to "New category", new_category_path %>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        menu
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is 
+      </div>
+    </div>
+  </div>
 </div>
-
-<%= link_to "New category", new_category_path %>
